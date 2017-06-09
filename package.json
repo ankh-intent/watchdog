@@ -1,18 +1,18 @@
 {
-	"name": "intent-watchdog",
-	"version": "0.0.1",
-	"description": "Filesystem watcher",
-	"main": "src/index.js",
-	"types": "src/index.d.ts",
-	"scripts": {
-	},
-	"keywords": [
-		"intent-watchdog",
-		"watchdog"
-	],
-	"author": "ankhzet@gmail.com",
-	"license": "ISC",
-	"dependencies": {
-		"intent-utils": "^0.0.1"
-	}
+  "name": "intent-watchdog",
+  "version": "0.0.1",
+  "description": "Filesystem watcher",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {},
+  "keywords": [
+    "intent-watchdog",
+    "watchdog"
+  ],
+  "author": "ankhzet@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^1.7.0",
+    "intent-utils": "^0.0.1"
+  }
 }
