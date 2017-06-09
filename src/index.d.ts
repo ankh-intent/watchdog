@@ -1,1 +1,1 @@
-export { Watchdog, WatchItem, WatchMatcher } from './core/watchdog';
+export * from './core/watchdog';

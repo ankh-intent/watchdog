@@ -11,5 +11,8 @@
 		"watchdog"
 	],
 	"author": "ankhzet@gmail.com",
-	"license": "ISC"
+	"license": "ISC",
+	"dependencies": {
+		"intent-utils": "^0.0.1"
+	}
 }

@@ -1,16 +1,16 @@
 
 export interface WatchdogOptions {
-
+	aggregation?: number;
 }
 
-export interface WatchMatcher {
+export interface UnitMatcher {
 	pattern: string|RegExp;
 
 }
 
 export interface WatchItem {
 	uid: number;
-	matcher: WatchMatcher;
+	matcher: UnitMatcher;
 
 	detach(): boolean;
 }
@@ -21,10 +21,15 @@ export class Watchdog {
 	private watches: {[index: number]: WatchItem};
 
 	public constructor(options: WatchdogOptions = {}) {
+		this.watches = {};
 		this.options = options;
 	}
 
-	public watch(matcher: WatchMatcher): WatchItem {
+	public debounce(delay: number) {
+
+	}
+
+	public watch(matcher: UnitMatcher): WatchItem {
 		let self = this;
 		let item = <WatchItem>{
 			uid: ++this.uid,
